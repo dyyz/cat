@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" th="http://www.thymeleaf.org">
+	<head th:replace="common/header :: common_header(~{::title},~{},~{})">
+		<title>注册页面</title>
+	</head>
+	<body>
+		<form action="register" method="post">
+			<p>姓名：<input type="text" name="username"></p>
+			<p>密码：<input type="password" name="password"></p>
+			<p>手机：<input type="text" name="phone"></p>
+			<p><button type="submit">注册</button></p>
+		</form>
+	</body>
+</html>
